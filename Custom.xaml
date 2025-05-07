@@ -51,7 +51,7 @@
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="21"
                     Text="1.1：" />                     <!-- 内容直接复制到里面就行了，它会自动换行的，不怕突然超出，记得加版本在前 -->
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="1.核心模组更新，添加自定义天空渲染，优化建筑生成"，并且添加一个全新的开局过场 />
+                    Text="1.核心模组更新，添加自定义天空渲染，优化建筑生成，并且添加一个全新的开局过场" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
                     Text="2.启动器更新及美化（感谢又又桐），将开关动态加载界面的配置塞入启动器内" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
