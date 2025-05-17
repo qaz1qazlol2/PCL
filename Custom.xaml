@@ -5,8 +5,10 @@
                     Text="" />    
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
                     Text="" />  
-        <TextBlock TextWrapping="Wrap" Margin="50,0,0,4" FontSize="21" Foreground="#FF0000"
+        <TextBlock TextWrapping="Wrap" Margin="50,0,0,4" FontSize="15" Foreground="#FF0000" HorizontalAlignment="Center"
                     Text="如进游戏卡加载界面请下拉点击功能列表里面的开关动态加载界面并且输入N关闭动态加载界面" />                     
+        <TextBlock TextWrapping="Wrap" Margin="60,0,0,4" FontSize="18" Foreground="#FF0000" HorizontalAlignment="Center"
+                    Text="关闭动态加载后还进不去请使用pcl自带的内存清理后再次进入游戏" />       
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
                     Text="" />  
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
@@ -28,7 +30,6 @@
     </StackPanel>
 </local:MyCard>
 
-
 <local:MyCard Title="功能" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">    <!-- 这个没必要改变 -->
     <StackPanel Margin="25,40,23,15">
         <local:MyImage Height="200" HorizontalAlignment="Center" Source="https://s21.ax1x.com/2025/05/03/pEbR2Zj.png" />      <!-- 这个没必要改变 -->
@@ -39,8 +40,12 @@
                         Text="QQ群" EventType="弹出窗口" EventData="QQ群|1：“977106713”" />              <!-- 除了加Q群没什么要改，\n这个后面的都是换了行 --> 
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
                         Text="打开官网" EventType="打开网页" EventData="https://allforhina.com/" />                        <!-- 如果换官网的话，那就把地址换就行了 -->
-            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+        </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="10,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
                         Text="开关动态加载界面" EventType="执行命令" EventData="changer.cmd" /> 
+            <local:MyButton Margin="10,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="内存优化" EventType="内存优化"  /> 
         </StackPanel>
     </StackPanel>
 </local:MyCard>
@@ -49,29 +54,27 @@
     <StackPanel Margin="23,50,23,50">
          <local:MyImage Height="200" HorizontalAlignment="Center" Source="https://s21.ax1x.com/2025/05/03/pEbRcLQ.png" />      <!-- 这个没必要改变 -->
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="21"
-                    Text="1.1：" />                     <!-- 内容直接复制到里面就行了，它会自动换行的，不怕突然超出，记得加版本在前 -->
+                    Text="1.1.1：" />                     <!-- 内容直接复制到里面就行了，它会自动换行的，不怕突然超出，记得加版本在前 -->
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="1.核心模组更新，添加自定义天空渲染，优化建筑生成，并且添加一个全新的开局过场" />
+                    Text="1.核心模组更新，优化建筑生成方式，添加新的超大箱子" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="2.启动器更新及美化（感谢又又桐），将开关动态加载界面的配置塞入启动器内" />
+                    Text="2.枪包更新" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
                     Text="3.任务更新" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
                     Text="4.其他模组更新" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="5.枪包进行较大幅度修改（感谢对爱丽丝发癫）" />
+                    Text="5.PCL配置文件更新" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="6.冠军配置更新" />
+                    Text="6.删除部分无用模组" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="7.添加新的适配自定义天空渲染的光影" />
+                    Text="7.更改冠军配置和难度" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="8.删除不兼容的光影" />
+                    Text="8.调整一键背包整理整理mod按钮位置" />
         <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="9.修改建筑生成相对于原版的密度为85%" />
-        <TextBlock TextWrapping="Wrap" Margin="50,0,0,4"
-                    Text="10.添加新的模组（诡厄巫法）" />
+                    Text="9.降低一个模组版本防止崩溃" />
         <TextBlock TextWrapping="Wrap" Margin="500,0,0,4"
-                    Text="发布时间2025年5月5日" />           <!-- 这改一下时间就得了 -->
+                    Text="发布时间2025年5月17日" />           <!-- 这改一下时间就得了 -->
     </StackPanel>
 </local:MyCard>
 
